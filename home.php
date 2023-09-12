@@ -9,7 +9,11 @@
 
 	<?php get_template_part('template/intro'); ?>
 
-	<?php get_template_part('template/news'); ?>
+	<?php
+	if ( has_published_posts() ) {
+		get_template_part( 'template/news' );
+	}
+	?>
 
 	<?php get_template_part('template/education'); ?>
 

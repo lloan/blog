@@ -157,3 +157,14 @@ function get_linkedin_share_url( $ID = null ) {
 function the_linkedin_share_url( $ID = null ) {
 	echo get_linkedin_share_url( $ID );
 }
+
+// Check if there are published posts
+function has_published_posts() {
+	$args = array(
+		'post_type'      => 'post', // Change to your custom post type if needed
+		'post_status'    => 'publish',
+		'posts_per_page' => 1, // You can adjust the number of posts to check
+	);
+
+	return ( new WP_Query( $args ) )->have_posts();
+}
