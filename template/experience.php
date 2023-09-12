@@ -93,7 +93,7 @@
 						foreach ($education as $key => $value) {
 							$end = $education[ $index ]['end'];
 							$start = $education[ $index ]['start'];
-							$tense = $education[ $index ]['tense'];
+							$tense = $education[ $index ]['tense'] ?? "present";
 							$date = ( empty( $end ) || $end === null ) && $tense !== null ? formatDateDifference( $start, $end, $tense ) : formatDateDifference( $start, $end );
 							?>
 							<div class="c-timeline__item">
