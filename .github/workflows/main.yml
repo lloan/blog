@@ -12,6 +12,10 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
 
+    env:
+      SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
+      SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+
     steps:
       - name: Checkout code
         uses: actions/checkout@v2
@@ -24,14 +28,9 @@ jobs:
           echo "User $SSH_USERNAME" >> ~/.ssh/config
           echo "HostName 208.87.134.120" >> ~/.ssh/config
           echo "Port 22" >> ~/.ssh/config
-          echo "Password $SSH_PASSWORD" >> ~/.ssh/config
-        env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+          echo "Password $SSH_PASSWORD" >> ~/.ssh/config 
 
       - name: Deploy Theme
         run: |
           scp -r ./* $SSH_USERNAME@208.87.134.120:/var/www/lloanalas.com/wp-content/themes/blog
-        env:
-          SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
-          SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
+       
