@@ -31,7 +31,7 @@ jobs:
 
       - name: Deploy Theme
         run: |
-          scp -r path/to/your/theme/* $SSH_USERNAME@208.87.134.120:/var/www/lloanalas.com/wp-content/themes/blog
+          scp -r ./* $SSH_USERNAME@208.87.134.120:/var/www/lloanalas.com/wp-content/themes/blog
         env:
           SSH_USERNAME: ${{ secrets.SSH_USERNAME }}
           SSH_PASSWORD: ${{ secrets.SSH_PASSWORD }}
