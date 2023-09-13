@@ -2604,6 +2604,12 @@ footer {
     width: 100% !important;
 }
 
+@media screen and (max-width: 865px){
+    .news-single-container .wp-block-image img {
+        width: 100% !important;
+    }
+}
+
 .news-single-container h1 {
     color: #555;
     font-size: 36px;
@@ -2777,6 +2783,7 @@ section.news-author-bio {
     display: flex;
     margin: 45px 0 0 0;
     padding: 0;
+    clear: both;
 }
 
 .news-taxonomy-bubbles li {
