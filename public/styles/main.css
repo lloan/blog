@@ -2604,16 +2604,33 @@ footer {
     width: 100% !important;
 }
 
-@media screen and (max-width: 865px){
-    .news-single-container .wp-block-image img {
-        width: 100% !important;
+@media screen and (max-width: 765px){
+    .news-single-container .wp-block-image figure {
+        width: 100%;
+        margin: 30px auto;
+        float: none;
+    }
+
+    .news-single-container .wp-block-image figure img {
+        height: auto;
     }
 }
 
 .news-single-container h1 {
-    color: #555;
+    color: #333;
     font-size: 36px;
     line-height: 36px;
+}
+.wp-block-kevinbatdorf-code-block-pro {
+    padding: 25px 0;
+}
+
+.news-single-container h2 {
+    color: #333;
+}
+
+h2.wp-block-heading {
+    margin: 45px 0 0;
 }
 
 .news-single-container p {
