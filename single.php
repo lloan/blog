@@ -50,7 +50,7 @@
 		<hr />
 		<section>
 			<h2>Useful Links</h2>
-			<button id="toggleButton" aria-expanded="true">[-]</button>
+			<button id="toggleButton" aria-expanded="true" title="toggle useful links">[-]</button>
 		</section>
 		<ul class="news-links">
 			<!-- list items here -->
