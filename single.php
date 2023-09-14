@@ -86,9 +86,17 @@
 
       // Iterate through the modified anchor texts and create a list
       anchorTexts.forEach((anchor, index) => {
-        const listItem = document.createElement('a');
-        listItem.innerHTML = `[${index+1}] ${anchorLabels[index]} - ${footnotes[index].href}`;
-        listItem.href = footnotes[index].href;
+        const listItem = document.createElement('span');
+        listItem.innerHTML = `[${index + 1}] <strong>${anchorLabels[index]}</strong> - `;
+        listItem.setAttribute('aria-hidden', 'true'); // Hide it from screen readers
+
+        const link = document.createElement('a');
+        link.href = footnotes[index].href;
+        link.textContent = footnotes[index].textContent;
+        link.setAttribute('aria-label', `${anchorLabels[index]} - ${footnotes[index].textContent}`); // Provide an accessible label
+        link.tabIndex = 0; // Make it keyboard accessible
+
+        listItem.appendChild(link);
 
         // Append the list item to the compilation element
         newsLinksList.appendChild(listItem);

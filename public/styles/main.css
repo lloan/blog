@@ -2822,7 +2822,7 @@ section.news-author-bio {
 .news-useful-links {
     width: 100%;
     max-width: 960px;
-    margin: 0 auto;
+    margin: 20px auto;
     padding: 0 25px;
 }
 
@@ -2831,7 +2831,7 @@ section.news-author-bio {
 }
 
 .news-useful-links h2 {
-    margin: 20px 0 40px 0;
+    margin: 20px 0;
 }
 
 .news-links {
