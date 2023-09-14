@@ -2827,7 +2827,7 @@ section.news-author-bio {
 }
 
 .hidden {
-    display: none;
+    display: none !important;
 }
 
 .news-useful-links h2 {
@@ -2839,4 +2839,15 @@ section.news-author-bio {
     display: flex;
     flex-direction: column;
     gap: 5px;
+}
+
+.news-useful-links section {
+    display: flex;
+    justify-content: space-between;
+}
+
+#toggleButton {
+    background-color: transparent;
+    border: none;
+    color: #FBB275;
 }
