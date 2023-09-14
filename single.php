@@ -10,9 +10,6 @@
 			 while ( have_posts() ) {
 				 the_post();
 				 ?>
-<!--				 <a class="news-go-home-icon" href="--><?php //echo get_home_url(); ?><!--" title="Go back home">-->
-<!--					 <i class="fa-solid fa-arrow-left" aria-hidden="true"></i>-->
-<!--				 </a>-->
 				 <span><?php the_date(); ?></span>
 
 				 <?php the_title( '<h1>', '</h1>' ); ?>
@@ -46,7 +43,57 @@
 		 ?>
 		</article>
 	</div>
+
 <?php get_template_part('template/share'); ?>
+
+	<div class="news-useful-links hidden">
+		<hr />
+		<h2>Useful Links</h2>
+		<ul class="news-links">
+
+		</ul>
+	</div>
+
+	<script>
+      // get all anchor links within the article
+      const footnotes = document.querySelectorAll('.news-single-container p a');
+      const anchorTexts = [];
+      const anchorLabels = [];
+
+      // Iterate through anchor tags
+      footnotes.forEach((anchor, index) => {
+        // Create a superscript element for the index
+        const superscript = document.createElement('sup');
+        superscript.textContent = `[${index + 1}] `;
+
+        // Store the label for the current anchor
+        anchorLabels.push(anchor.textContent);
+
+        // Append the superscript element after the anchor text
+        anchor.appendChild(superscript);
+
+        // Store the modified text
+        anchorTexts.push(anchor);
+      });
+
+      // Create a compilation element (e.g., a div)
+      const newsLinksList = document.querySelector('.news-links');
+      const newsLinksContainer = document.querySelector('.news-useful-links');
+
+      if (anchorLabels.length !== 0) {
+        newsLinksContainer.classList.remove('hidden');
+      }
+
+      // Iterate through the modified anchor texts and create a list
+      anchorTexts.forEach((anchor, index) => {
+        const listItem = document.createElement('a');
+        listItem.innerHTML = `[${index+1}] ${anchorLabels[index]} - ${footnotes[index].href}`;
+        listItem.href = footnotes[index].href;
+
+        // Append the list item to the compilation element
+        newsLinksList.appendChild(listItem);
+      });
+	</script>
 
 <?php get_template_part('template/author'); ?>
 
