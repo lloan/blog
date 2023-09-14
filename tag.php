@@ -1,8 +1,4 @@
 <?php
-/**
- *
- * Template Name: All Articles Template
- */
 
 get_header();
 
