@@ -92,7 +92,7 @@
 
         const link = document.createElement('a');
         link.href = footnotes[index].href;
-        link.textContent = footnotes[index].textContent;
+        link.textContent = footnotes[index].href;
         link.setAttribute('aria-label', `${anchorLabels[index]} - ${footnotes[index].textContent}`); // Provide an accessible label
         link.tabIndex = 0; // Make it keyboard accessible
 
