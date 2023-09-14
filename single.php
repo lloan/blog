@@ -48,9 +48,12 @@
 
 	<div class="news-useful-links hidden">
 		<hr />
-		<h2>Useful Links</h2>
+		<section>
+			<h2>Useful Links</h2>
+			<button id="toggleButton" aria-expanded="true">[-]</button>
+		</section>
 		<ul class="news-links">
-
+			<!-- list items here -->
 		</ul>
 	</div>
 
@@ -100,6 +103,28 @@
 
         // Append the list item to the compilation element
         newsLinksList.appendChild(listItem);
+      });
+
+      const usefulLinksButton = document.querySelector('.news-useful-links button');
+
+      usefulLinksButton.addEventListener('click', function(){
+        const state = usefulLinksButton.getAttribute('aria-expanded');
+      })
+
+      // Get the button element by its id
+      const toggleButton = document.getElementById('toggleButton');
+
+      // Add a click event listener to the button
+      toggleButton.addEventListener('click', () => {
+        // Toggle the aria-expanded attribute
+        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
+        toggleButton.setAttribute('aria-expanded', !isExpanded);
+
+        // Toggle the button text
+        toggleButton.textContent = isExpanded ? '[+]' : '[-]';
+
+        // Toggle the visibility of the links section
+        newsLinksList.classList.toggle('hidden');
       });
 	</script>
 
