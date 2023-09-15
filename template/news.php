@@ -3,7 +3,7 @@
 	<div class="o-section__content-bg  t-section__content"></div>
 	<div class="o-container">
 		<div class="o-section__container">
-			<header class="o-section__header  t-section__header">
+			<header class="o-section__header t-section__header">
 				<div class="o-content">
 					<h2 class="o-section__heading"> Blog </h2>
 					<span><a href="/articles">view all</a></span>

@@ -574,6 +574,38 @@ img[height] {
     max-width: none;
 }
 
+/* Margin Top Classes */
+.mt-10 { margin-top: 10px; }
+.mt-20 { margin-top: 20px; }
+.mt-30 { margin-top: 30px; }
+.mt-40 { margin-top: 40px; }
+.mt-50 { margin-top: 50px; }
+.mt-60 { margin-top: 60px; }
+
+/* Margin Left Classes */
+.ml-10 { margin-left: 10px; }
+.ml-20 { margin-left: 20px; }
+.ml-30 { margin-left: 30px; }
+.ml-40 { margin-left: 40px; }
+.ml-50 { margin-left: 50px; }
+.ml-60 { margin-left: 60px; }
+
+/* Margin Right Classes */
+.mr-10 { margin-right: 10px; }
+.mr-20 { margin-right: 20px; }
+.mr-30 { margin-right: 30px; }
+.mr-40 { margin-right: 40px; }
+.mr-50 { margin-right: 50px; }
+.mr-60 { margin-right: 60px; }
+
+/* Margin Bottom Classes */
+.mb-10 { margin-bottom: 10px; }
+.mb-20 { margin-bottom: 20px; }
+.mb-30 { margin-bottom: 30px; }
+.mb-40 { margin-bottom: 40px; }
+.mb-50 { margin-bottom: 50px; }
+.mb-60 { margin-bottom: 60px; }
+
 .o-list-bare,
 .c-social-buttons,
 .c-clients {
@@ -2004,6 +2036,12 @@ img[height] {
     overflow-x: hidden;
 }
 
+@media screen and (max-width: 765px) {
+    .c-main-container {
+        padding-top: 60px;
+    }
+}
+
 .c-preloader {
     display: none;
     -ms-flex-pack: center;
@@ -2276,8 +2314,11 @@ img[height] {
     width: 10%;
     text-align: left;
     margin: unset;
-    margin-bottom: 30px;
     background: #1E131B !important;
+}
+
+.news-articles-header .news-deco-line {
+    margin-bottom: 30px;
 }
 
 .c-timeline {
@@ -2566,7 +2607,7 @@ footer {
 }
 
 .news-card-container {
-    padding: 30px 0 15px 0;
+    padding: 15px 0 15px 0;
 }
 
 .news-card-month {
@@ -2593,8 +2634,8 @@ footer {
 .news-single-container {
     width: 100%;
     max-width: 960px;
-    margin: 50px auto 25px auto;
-    padding: 25px 0;
+    margin: 0 auto 25px auto;
+    padding: 120px 0 0;
 }
 
 .news-single-container article {
@@ -2650,15 +2691,59 @@ h2.wp-block-heading {
 
 .news-header-logo-container {
     width: 100%;
-    max-width: 25px;
-    display: block;
-    margin: 25px auto;
+    margin: 35px auto;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item {
+    color: #333333;
+}
+
+.news-header-logo-container ul {
+    margin: 0;
+    display: flex;
+    gap: 50px;
+}
+
+.news-header-logo-container ul li {
+    list-style: none;
+}
+
+@media screen and (max-width: 765px){
+    .news-header-logo-container {
+        gap: unset;
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        padding: 70px 0 25px 0;
+        background-color: rgba(255,255,255,0.9);
+        z-index: 1;
+        top: -40px;
+        height: 100vh;
+        justify-content: space-between;
+    }
+
+    .menu-item {
+        width: 100%;
+        display: block;
+    }
+
+
+    .news-header-logo-container ul {
+        margin: 0;
+        width: 100%;
+        display: block
+    }
+
+    .news-header-logo-container ul li {
+        list-style: none;
+        padding: 10px 28px;
+    }
 }
 
 .news-header-logo {
-    max-width: 25px;
-    margin: 35px auto 0 auto;
-    display: block;
+    width: 25px;
 }
 
 .news-footer-social {
@@ -2766,7 +2851,7 @@ section.news-author-bio {
     display: flex;
     width: 100%;
     max-width: 960px;
-    margin: 60px auto;
+    margin: 0 auto;
     flex-direction: column;
 }
 
@@ -2788,8 +2873,8 @@ section.news-author-bio {
     display: flex;
     width: 100%;
     max-width: 960px;
-    margin: 60px auto;
-
+    margin: 0 auto;
+    padding: 60px 28px;
     flex-wrap: wrap;
 }
 
@@ -2802,6 +2887,7 @@ section.news-author-bio {
     margin: 45px 0 0 0;
     padding: 0;
     clear: both;
+    flex-wrap: wrap;
 }
 
 .news-taxonomy-bubbles li {
@@ -2851,4 +2937,51 @@ section.news-author-bio {
     background-color: transparent;
     border: none;
     color: #FBB275;
+}
+
+@media screen and (max-width: 765px){
+    .hide-mobile {
+        display: none !important;
+    }
+    .news-author section {
+        flex-direction: column;
+    }
+}
+
+@media screen and (min-width: 765px) {
+    .hide-desktop {
+        display: none !important;
+    }
+}
+
+.news-header-mobile {
+    display: flex;
+    width: 25px;
+    margin: 25px auto;
+}
+
+.menu-toggle {
+    background: rgba(255,255,255,0.9);
+    border: none;
+    font-size: 24px;
+    margin: 0;
+    padding: 15px 28px;
+    position: fixed;
+    z-index: 2;
+    color: #333;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.menu-toggle a.menu-item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+@media screen and (max-width: 599px) {
+    .news-articles [class*="o-grid__col"] {
+        padding-right: 0;
+    }
 }
