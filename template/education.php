@@ -5,7 +5,7 @@
 		<div class="o-section__container">
 			<header class="o-section__header  t-section__header">
 				<div class="o-content">
-					<h2 class="o-section__heading"> Education </h2>
+					<h2 id="education" class="o-section__heading"> Education </h2>
 				</div>
 			</header>
 			<div class="o-section__content  t-section__content  u-pt-0">
@@ -47,18 +47,18 @@
 							$tense = $education[ $index ]['tense'] ?? 'present';
 							$date = ( empty( $end ) || $end === null ) && $tense !== null ? formatDateDifference( $start, $end, $tense ) : formatDateDifference( $start, $end );
 							?>
-							<div class="c-timeline__item">
-								<div class=" t-primary-bg"></div>
+							<div class="c-timeline__item" role="listitem">
+								<div class="t-primary-bg"></div>
 								<div class="o-content">
 									<div class="o-grid">
 										<div class="o-grid__col-md-5">
-											<div class="c-work__timeframe"><?php echo $date; ?></div>
-											<h3 class="c-work__heading"><?php echo $education[$index]['school']; ?></h3>
-											<h4 class="c-work__title"><?php echo $education[$index]['degree']; ?></h4>
-											<div class="c-work__location"><?php echo $education[$index]['location']; ?></div>
+											<div class="c-work__timeframe" aria-label="Date"><?php echo $date; ?></div>
+											<h3 class="c-work__heading" aria-label="School"><?php echo $education[$index]['school']; ?></h3>
+											<h4 class="c-work__title" aria-label="Degree"><?php echo $education[$index]['degree']; ?></h4>
+											<div class="c-work__location" aria-label="Location"><?php echo $education[$index]['location']; ?></div>
 										</div>
 										<div class="o-grid__col-md-7">
-											<p><?php echo $education[$index]['desc']; ?></p>
+											<p aria-label="Description"><?php echo $education[$index]['desc']; ?></p>
 										</div>
 									</div>
 								</div>

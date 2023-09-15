@@ -25,12 +25,12 @@ logo.addEventListener("click", function(e){
 <nav class="news-header-logo-container hide-mobile">
 	<ul>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Home">
+			<a class="menu-item" href="<?php echo get_home_url() . '/articles/'; ?>" aria-label="Home">
 				Blog
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Test Page 1">
+			<a class="menu-item" href="<?php echo get_home_url() . '/#education'; ?>" aria-label="Test Page 1">
 				Education
 			</a>
 		</li>
@@ -40,12 +40,12 @@ logo.addEventListener("click", function(e){
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Test Page 2">
+			<a class="menu-item" href="<?php echo get_home_url() . '/#experience'; ?>" aria-label="Test Page 2">
 				Experience
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Test Page 3">
+			<a class="menu-item" href="https://www.github.com/lloan" aria-label="Test Page 3">
 				Code
 			</a>
 		</li>
