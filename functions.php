@@ -22,12 +22,6 @@ function enqueue_styles_scripts() {
 
 add_action( 'wp_enqueue_scripts', 'enqueue_styles_scripts' );
 
-function enqueue_font_awesome() {
-	wp_enqueue_style( 'font-awesome', 'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css' );
-}
-
-add_action( 'wp_enqueue_scripts', 'enqueue_font_awesome' );
-
 // Remove the admin bar from the front-end for all users
 add_filter('show_admin_bar', '__return_false');
 

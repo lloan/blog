@@ -21,6 +21,9 @@
 				<a href="https://www.linkedin.com/in/lloan" aria-label="LinkedIn Profile">
 					<i class="fab fa-lg fa-linkedin-in" aria-hidden="true"></i>
 				</a>
+				<a href="mailto:blog@lloan.mozmail.com" aria-label="LinkedIn Profile">
+					<i class="fa-regular fa-envelope" aria-hidden="true"></i>
+				</a>
 			</p>
 		</section>
 	</section>

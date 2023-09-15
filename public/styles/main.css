@@ -2276,6 +2276,7 @@ img[height] {
     width: 10%;
     text-align: left;
     margin: unset;
+    margin-bottom: 30px;
     background: #1E131B !important;
 }
 
@@ -2666,7 +2667,7 @@ h2.wp-block-heading {
     margin: 10px 0;
 }
 
-.news-footer-social .fab {
+.news-footer-social i {
     color: #333333;
 }
 
