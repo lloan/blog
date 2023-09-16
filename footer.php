@@ -16,6 +16,9 @@
 	</p>
 	<?php wp_footer(); ?>
 
+	<?php
+	if (strpos($_SERVER['HTTP_HOST'], 'local') === false) {
+	?>
 	<!-- Google tag (gtag.js) -->
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-EL23GNF0Z7"></script>
 	<script>
@@ -25,6 +28,9 @@
 
       gtag('config', 'G-EL23GNF0Z7');
 	</script>
+	<?php
+	}
+	?>
 </footer>
 
 </body>
