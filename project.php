@@ -1,13 +1,13 @@
 <?php
 /**
  *
- * Template Name: All Articles Template
+ * Template Name: All Projects Template
  */
 
 get_header();
 
 $args = array(
-	'post_type' => 'post',          // Ensure we're getting posts (not pages or custom post types)
+	'post_type' => 'project',          // Ensure we're getting posts (not pages or custom post types)
 	'post_status' => 'publish',     // Only retrieve published posts
 	'posts_per_page' => -1,          // Limit to 6 posts
 	'orderby' => 'date',            // Order by post date
@@ -24,12 +24,12 @@ $query = new WP_Query($args);
 	<div class="c-main-container js-main-container news-articles">
 		<div class="news-articles-header">
 			<section>
-				<h1><?php _e('All Articles', 'lloan'); ?></h1>
-				<span><?php _e('Total of', 'lloan'); ?> <?php echo $query->post_count; ?> <?php _e('articles ready to be read!', 'lloan'); ?></span>
+				<h1><?php _e('Projects', 'lloan');?></h1>
 			</section>
 			<hr class="news-deco-line" aria-hidden="true">
+			<?php include('template/projects.php'); ?>
 		</div>
-		<?php include('template/articles.php'); ?>
+
 	</div>
 
 <?php get_footer(); ?>

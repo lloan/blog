@@ -25,7 +25,7 @@
 					                    </span>
 									</h1>
 									<h2 class="a-header  c-brand__sub-title  t-sub-title">
-										<span class="c-brand__sizer"> Software Engineer - Web Technologies </span>
+										<span class="c-brand__sizer"> <?php _e('Software Engineer - Web Technologies', 'lloan');?> </span>
 									</h2>
 								</div>
 							</div>

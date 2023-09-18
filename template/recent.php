@@ -40,7 +40,7 @@ if (!(empty($previous_post)) || !empty($next_post)) { ?>
 				<img class="news-article-image" src="<?php echo $image; ?>" alt="<?php echo $alt_text; ?>" role="img" aria-label="<?php echo $alt_text; ?>">
 				<div class="news-card-read-article" role="contentinfo" aria-label="Additional Information">
 					<a href="<?php echo get_the_permalink($previous_post); ?>" class="news-read-article" role="link" tabindex="0">
-						<i class="fa-solid fa-arrow-left" aria-hidden="true"></i> Read Previous Article
+						<i class="fa-solid fa-arrow-left" aria-hidden="true"></i> <?php _e('Read Previous Article', 'lloan');?>
 					</a>
 				</div>
 			</div>
@@ -81,7 +81,7 @@ if (!(empty($previous_post)) || !empty($next_post)) { ?>
 				<img class="news-article-image" src="<?php echo $image; ?>" alt="<?php echo $alt_text; ?>" role="img" aria-label="<?php echo $alt_text; ?>">
 				<div class="news-card-read-article" role="contentinfo" aria-label="Additional Information">
 					<a href="<?php echo get_the_permalink($next_post); ?>" class="news-read-article" role="link" tabindex="0">
-						Read Next Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+						<?php _e('Read Next Article', 'lloan');?> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
 					</a>
 				</div>
 			</div>

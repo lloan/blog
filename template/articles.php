@@ -28,7 +28,7 @@ if ($query->have_posts()) {
 							            <?php echo minsToRead( $post->post_content ); ?>
 							        </span>
 				<a href="<?php echo get_the_permalink(); ?>" class="news-read-article" role="link" tabindex="0">
-					Read Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+					<?php _e('Read Article', 'lloan');?> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
 				</a>
 			</div>
 		</div>

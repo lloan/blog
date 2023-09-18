@@ -5,7 +5,7 @@
 		<div class="o-section__container">
 			<header class="o-section__header  t-section__header">
 				<div class="o-content">
-					<h2 id="education" class="o-section__heading"> Education </h2>
+					<h2 id="education" class="o-section__heading"> <?php _e('Education', 'lloan'); ?> </h2>
 				</div>
 			</header>
 			<div class="o-section__content  t-section__content  u-pt-0">
@@ -17,26 +17,26 @@
 								'start'    => '2021-08-01',
 								'end'      => null,
 								'tense'    => 'future',
-								'school'   => 'Claremont Graduate University',
-								'degree'   => 'Doctor of Philosophy',
+								'school'   => __('Claremont Graduate University', 'lloan'),
+								'degree'   => __('Doctor of Philosophy', 'lloan'),
 								'location' => 'Claremont, CA',
-								'desc'     => "Doctor of philosophy in information systems and technology, IT strategy & innovation. I've chosen to put this academic pursuit on hold to concentrate on other professional endeavors for the time being."
+								'desc'     => __("Doctor of philosophy in information systems and technology, IT strategy & innovation. I've chosen to put this academic pursuit on hold to concentrate on other professional endeavors for the time being.", 'lloan')
 							],
 							[
 								'start'    => '2018-07-01',
 								'end'      => '2020-03-01',
-								'school'   => 'University of Denver',
-								'degree'   => 'Master of Science in ICT',
+								'school'   => __('University of Denver', 'lloan'),
+								'degree'   => __('Master of Science in ICT', 'lloan'),
 								'location' => 'Denver, CO',
-								'desc'     => 'Concentration in software design and programming, computer science. Thesis written on what is required to build tech cities that thrive.'
+								'desc'     => __('Concentration in software design and programming, computer science. Thesis written on what is required to build tech cities that thrive.', 'lloan')
 							],
 							[
 								'start'    => '2010-01-01',
 								'end'      => '2015-12-25',
 								'school'   => 'Art Institute of California',
-								'degree'   => "Bachelor's of Science",
+								'degree'   => __("Bachelor's of Science", 'lloan'),
 								'location' => 'San Bernardino, CA',
-								'desc'     => 'Media arts and animation - specialized in rigging and tooling. Trained in traditional art, 2D & 3D animation, 3D modeling, texturing, storyboarding, illustration, graphic design, motion graphics and design principles.'
+								'desc'     => __('Media arts and animation - specialized in rigging and tooling. Trained in traditional art, 2D & 3D animation, 3D modeling, texturing, storyboarding, illustration, graphic design, motion graphics and design principles.', 'lloan')
 							],
 						];
 						$index = 0;

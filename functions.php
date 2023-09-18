@@ -1,5 +1,7 @@
 <?php
 
+include_once 'inc/acf.php';
+
 function theme_setup() {
 	// Add featured image support
 	add_theme_support('post-thumbnails');
@@ -57,10 +59,12 @@ function minsToRead($content, $wordsPerMinute = 200) {
 
 	// Ensure a minimum of 1 minute
 	if ($mins <= 1) {
-		return '1 minute to read';
+		return __('1 minute to read', 'lloan');
 	}
 
-	return $mins . ' min' . ($mins === 1 ? '' : 's') . ' to read';
+	$str = $mins . ' min' . ($mins === 1 ? '' : 's') . ' to read';
+
+	return __($str, 'lloan');
 }
 
 function get_random_string() {

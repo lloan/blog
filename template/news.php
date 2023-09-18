@@ -5,8 +5,8 @@
 		<div class="o-section__container">
 			<header class="o-section__header t-section__header">
 				<div class="o-content">
-					<h2 class="o-section__heading"> Blog </h2>
-					<span><a href="/articles">view all</a></span>
+					<h2 class="o-section__heading"> <?php _e('Articles', 'lloan'); ?> </h2>
+					<span><a href="/articles"><?php _e('view all', 'lloan'); ?></a></span>
 				</div>
 			</header>
 			<div class="o-section__content  t-section__content  o-section__full-bottom-space">
@@ -30,8 +30,8 @@
 							$alt_text = get_post_meta($attachment_id, '_wp_attachment_image_alt', true);
 							?>
 
-							<div class="o-grid__col-sm-6 news-card" role="article" aria-label="News Card">
-								<div role="contentinfo" aria-label="Publication Date">
+							<div class="o-grid__col-sm-6 news-card" role="article" aria-label="<?php _e('News Card', 'lloan'); ?>">
+								<div role="contentinfo" aria-label="<?php _e('Publication Date', 'lloan'); ?>">
 									<div class="c-number news-card-day"><?php echo get_the_date( "d" ); ?></div>
 									<div class="news-card-month"><?php echo get_the_date( "M" ); ?></div>
 								</div>
@@ -45,12 +45,12 @@
 									<p> <?php echo get_the_excerpt(); ?></p>
 								</div>
 								<img class="news-article-image" src="<?php echo $image; ?>" alt="<?php echo $alt_text; ?>" role="img" aria-label="<?php echo $alt_text; ?>">
-								<div class="news-card-read-article" role="contentinfo" aria-label="Additional Information">
+								<div class="news-card-read-article" role="contentinfo" aria-label="<?php _e('Additional Information', 'lloan');?>">
 							        <span>
 							            <?php echo minsToRead( $post->post_content ); ?>
 							        </span>
 									<a href="<?php echo get_the_permalink(); ?>" class="news-read-article" role="link" tabindex="0">
-										Read Article <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
+										<?php _e('Read Article', 'lloan'); ?> <i class="fa-solid fa-arrow-right" aria-hidden="true"></i>
 									</a>
 								</div>
 							</div>

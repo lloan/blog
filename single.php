@@ -49,84 +49,13 @@
 	<div class="news-useful-links hidden">
 		<hr />
 		<section>
-			<h2>Useful Links</h2>
-			<button id="toggleButton" aria-expanded="true" title="toggle useful links">[-]</button>
+			<h2><?php _e('Useful Links', 'lloan');?></h2>
+			<button id="toggleButton" aria-expanded="true" title="<?php _e('toggle useful links', 'lloan'); ?>">[-]</button>
 		</section>
 		<ul class="news-links">
 			<!-- list items here -->
 		</ul>
 	</div>
-
-	<script>
-      // get all anchor links within the article
-      const footnotes = document.querySelectorAll('.news-single-container p a');
-      const anchorTexts = [];
-      const anchorLabels = [];
-
-      // Iterate through anchor tags
-      footnotes.forEach((anchor, index) => {
-        // Create a superscript element for the index
-        const superscript = document.createElement('sup');
-        superscript.textContent = `[${index + 1}] `;
-
-        // Store the label for the current anchor
-        anchorLabels.push(anchor.textContent);
-
-        // Append the superscript element after the anchor text
-        anchor.appendChild(superscript);
-
-        // Store the modified text
-        anchorTexts.push(anchor);
-      });
-
-      // Create a compilation element (e.g., a div)
-      const newsLinksList = document.querySelector('.news-links');
-      const newsLinksContainer = document.querySelector('.news-useful-links');
-
-      if (anchorLabels.length !== 0) {
-        newsLinksContainer.classList.remove('hidden');
-      }
-
-      // Iterate through the modified anchor texts and create a list
-      anchorTexts.forEach((anchor, index) => {
-        const listItem = document.createElement('span');
-        listItem.innerHTML = `[${index + 1}] <strong>${anchorLabels[index]}</strong> - `;
-        listItem.setAttribute('aria-hidden', 'true'); // Hide it from screen readers
-
-        const link = document.createElement('a');
-        link.href = footnotes[index].href;
-        link.textContent = footnotes[index].href;
-        link.setAttribute('aria-label', `${anchorLabels[index]} - ${footnotes[index].textContent}`); // Provide an accessible label
-        link.tabIndex = 0; // Make it keyboard accessible
-
-        listItem.appendChild(link);
-
-        // Append the list item to the compilation element
-        newsLinksList.appendChild(listItem);
-      });
-
-      const usefulLinksButton = document.querySelector('.news-useful-links button');
-
-      usefulLinksButton.addEventListener('click', function(){
-        const state = usefulLinksButton.getAttribute('aria-expanded');
-      })
-
-      // Get the button element by its id
-      const toggleButton = document.getElementById('toggleButton');
-
-      // Add a click event listener to the button
-      toggleButton.addEventListener('click', () => {
-        // Toggle the aria-expanded attribute
-        const isExpanded = toggleButton.getAttribute('aria-expanded') === 'true';
-        toggleButton.setAttribute('aria-expanded', !isExpanded);
-
-        // Toggle the button text
-        toggleButton.textContent = isExpanded ? '[+]' : '[-]';
-
-        // Toggle the visibility of the links section
-        newsLinksList.classList.toggle('hidden');
-      });
-	</script>
 
 <?php get_template_part('template/author'); ?>
 

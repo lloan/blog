@@ -2717,15 +2717,19 @@ h2.wp-block-heading {
         flex-direction: column;
         position: fixed;
         padding: 70px 0 25px 0;
-        background-color: rgba(255,255,255,0.9);
+        background-color: #FFFFFF;
         z-index: 1;
         top: -40px;
         height: 100vh;
-        justify-content: space-between;
+        justify-content: flex-start;
+    }
+
+    .news-header-logo-container span {
+        padding: 0 28px;
+        text-align: right;
     }
 
     .menu-item {
-        width: 100%;
         display: block;
     }
 
@@ -2740,6 +2744,15 @@ h2.wp-block-heading {
         list-style: none;
         padding: 10px 28px;
     }
+}
+
+.close-button {
+    background: transparent;
+    border: none;
+    text-align: right;
+    padding: 0 28px;
+    color: #000;
+    font-weight: bold;
 }
 
 .news-header-logo {
@@ -2965,13 +2978,9 @@ section.news-author-bio {
     border: none;
     font-size: 24px;
     margin: 0;
-    padding: 15px 28px;
-    position: fixed;
-    z-index: 2;
+    z-index: 5;
     color: #333;
-    width: 100%;
-    display: flex;
-    align-items: center;
+    padding: 0;
 }
 
 .menu-toggle a.menu-item {
@@ -2984,4 +2993,57 @@ section.news-author-bio {
     .news-articles [class*="o-grid__col"] {
         padding-right: 0;
     }
+}
+
+.projects-tech-tags ul{
+    margin: 0;
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+}
+
+.projects-tech-tags li {
+    background-color: #F7F7F7;
+    padding: 5px 10px;
+    margin: 0 5px 5px 0;
+}
+
+.page-template-project .news-articles-header .news-deco-line {
+    margin-bottom: 15px;
+}
+
+.news-card-read-article.projects-view {
+    justify-content: flex-end !important;
+    gap: 5px;
+}
+
+.projects-deco-line {
+    margin-bottom: 15px !important;
+}
+
+.projects-links {
+    display: flex;
+    gap: 10px;
+}
+
+.projects-links a {
+    color: #333;
+}
+
+.projects-links a:hover {
+    color: #e0a707;
+}
+
+.mobile-menu-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 28px;
+    position: fixed;
+    background-color: rgba(255,255,255,0.9);
+    width: 100%;
+    z-index: 10;
 }

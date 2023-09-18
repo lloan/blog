@@ -28,8 +28,8 @@ if ( isset( $tag_name ) ) {
 	<div class="c-main-container js-main-container news-articles">
 		<div class="news-articles-header">
 			<section>
-				<h1 style="text-transform: capitalize;">All <?php echo $tag_name; ?> Articles</h1>
-				<span>Total of <?php echo $query->post_count; ?> articles ready to be read!</span>
+				<h1 style="text-transform: capitalize;"><?php echo $tag_name; ?> <?php _e('Articles', 'lloan');?></h1>
+				<span><?php _e('Total of');?> <?php echo $query->post_count; ?> <?php _e('articles ready to be read!', 'lloan');?></span>
 			</section>
 			<hr class="news-deco-line" aria-hidden="true">
 		</div>

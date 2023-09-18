@@ -6,65 +6,58 @@
 	<?php wp_head(); ?>
 </head>
 
-<button class="menu-toggle hide-desktop">
-	<i class="fa-solid fa-bars" ></i>
-	<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Home Page">
+<div class="mobile-menu-container hide-desktop">
+	<button class="menu-toggle">
+		<i class="fa-solid fa-bars" ></i>
+	</button>
+	<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="<?php _e('Home Page', 'lloan'); ?>">
 		<img class="news-header-logo" src="<?php echo get_template_directory_uri() . '/public/images/lloan.svg'; ?>" alt="Logo" />
 	</a>
-</button>
-
-<script>
-const logo = document.querySelector('.menu-toggle a.menu-item');
-
-logo.addEventListener("click", function(e){
-  e.stopPropagation();
-  window.location.href = ("<?php echo get_home_url(); ?>");
-}, true)
-</script>
+</div>
 
 <nav class="news-header-logo-container hide-mobile">
 	<ul>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url() . '/articles/'; ?>" aria-label="Home">
-				Blog
+			<a class="menu-item" href="<?php echo get_home_url() . '/articles/'; ?>" aria-label="<?php _e('Articles', 'lloan');?>">
+				<?php _e('Articles', 'lloan');?>
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url() . '/#education'; ?>" aria-label="Test Page 1">
-				Education
+			<a class="menu-item" href="<?php echo get_home_url() . '/#education'; ?>" aria-label="<?php _e('Education', 'lloan');?>">
+				<?php _e('Education', 'lloan');?>
 			</a>
 		</li>
 		<li class="hide-mobile">
 			<a class="menu-item" href="<?php echo get_home_url(); ?>" aria-label="Home Page">
-				<img class="news-header-logo" src="<?php echo get_template_directory_uri() . '/public/images/lloan.svg'; ?>" alt="Logo" />
+				<img class="news-header-logo" src="<?php echo get_template_directory_uri() . '/public/images/lloan.svg'; ?>" alt="<?php _e('Logo', 'lloan');?>" />
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url() . '/#experience'; ?>" aria-label="Test Page 2">
-				Experience
+			<a class="menu-item" href="<?php echo get_home_url() . '/#experience'; ?>" aria-label="<?php _e('Experience', 'lloan');?>">
+				<?php _e('Experience', 'lloan');?>
 			</a>
 		</li>
 		<li>
-			<a class="menu-item" href="https://www.github.com/lloan" aria-label="Test Page 3">
-				Code
+			<a class="menu-item" href="<?php echo get_home_url() . '/projects'; ?>" aria-label="<?php _e('Projects', 'lloan');?>">
+				<?php _e('Projects', 'lloan');?>
 			</a>
 		</li>
 	</ul>
 </nav>
 
 <script>
-	const toggler = document.querySelector('button.menu-toggle');
+  const toggler = document.querySelector('button.menu-toggle');
+  const closeButton = document.querySelector('button.close-button');
 
-	toggler.addEventListener('click', function(e){
-	  e.preventDefault();
+  function toggleMenu() {
+    const menuContainer = document.querySelector('nav.news-header-logo-container');
 
-	  const menuContainer = document.querySelector('nav.news-header-logo-container');
+    menuContainer.classList.toggle('hide-mobile');
+  }
 
-	  menuContainer.classList.toggle('hide-mobile');
-
-	  console.log(e);
-
-	})
+  toggler.addEventListener('click', function(){
+    toggleMenu();
+  })
 </script>
 
-<body class="lloan-blog">
+<body class="<?php echo body_class(); ?>">
