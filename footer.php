@@ -28,7 +28,13 @@
 
       gtag('config', 'G-EL23GNF0Z7');
 	</script>
-	<script>
+	<?php
+	}
+	?>
+	<?php
+		if (is_singular('post')){
+			?>
+		<script>
           // get all anchor links within the article
           const footnotes = document.querySelectorAll('.news-single-container p a');
           const anchorTexts = [];
@@ -97,9 +103,9 @@
             // Toggle the visibility of the links section
             newsLinksList.classList.toggle('hidden');
           });
-</script>
-	<?php
-	}
+		</script>
+		<?php
+		}
 	?>
 </footer>
 
