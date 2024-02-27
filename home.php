@@ -10,9 +10,10 @@
 	<?php get_template_part('template/intro'); ?>
 
 	<?php
-	if ( has_published_posts() ) {
-		get_template_part( 'template/news' );
-	}
+	// TODO: Removing due to limited time to create articles.
+	//	if ( has_published_posts() ) {
+	//		get_template_part( 'template/news' );
+	//	}
 	?>
 
 	<?php get_template_part('template/education'); ?>
