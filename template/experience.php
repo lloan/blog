@@ -22,7 +22,7 @@
 								'company'   => 'Freelance',
 								'title'   => __('Web Developer', 'lloan'),
 								'location' => 'Rialto, CA',
-								'desc'     => __("General web development", 'lloan'),
+								'desc'     => __("Translated PDF designs into pixel-perfect web applications. Directed hosting, deployment, and version control. Built accessible, high-performance web architectures. Developed proprietary applications under NDAs.", 'lloan'),
 							],
 							[
 								'start'    => '2014-01-12',
@@ -36,9 +36,9 @@
 								'start'    => '2015-02-15',
 								'end'      => '2017-07-01',
 								'company'   => 'Voice Marketing',
-								'title'   => __('Creative Director', 'lloan'),
+								'title'   => __('Lead Web Developer', 'lloan'),
 								'location' => 'Rancho, CA',
-								'desc'     => __("Directed a group of 14 creatives in the design and development of web development projects and design projects. Managed over 50 different websites for a plethora of different clients, including a national entity with franchises all over the country (Steri-Clean).", 'lloan'),
+								'desc'     => __("Oversaw WordPress application development for marketing campaigns. Managed SEO efforts to boost website visibility and traffic. Led cross-functional team, completing hundreds of projects. Collaborated with designers and marketers to integrate web solutions. Managed over 50 different websites for a plethora of different clients, including a national entity with franchises all over the country (Steri-Clean/Hoarders).", 'lloan'),
 							],
 							[
 								'start'    => '2017-07-05',
@@ -46,7 +46,7 @@
 								'company'   => 'Fit Body Boot Camp HQ',
 								'title'   => __('Web Developer', 'lloan'),
 								'location' => 'Chino Hills, CA',
-								'desc'     => __("Developed and built sites using HTML, CSS, JavaScript/jQuery, PHP, MySQL. Created custom WordPress themes, plugins and extended existing functionality. Led SEO efforts for a network of over 700 gym location sites using a combination of on-site and off-site strategies.", 'lloan'),
+								'desc'     => __("Developed custom WordPress themes with Bootstrap 3 & 4 for Multisite Networks, ensuring uniformity across 530+ franchise sites. Led custom theme and plugin development to automate internal processes and enhance operational efficiency. Managed search engine optimization efforts, driving organic traffic to franchise sites and online properties. Implemented version control with GitHub/Git, streamlining feature delivery and ensuring code integrity. Conducted code cleanup, documentation maintenance, and optimization for improved performance.", 'lloan'),
 							],
 							[
 								'start'    => '2019-05-01',
@@ -54,7 +54,7 @@
 								'company'   => 'Mozilla',
 								'title'   => __('DevTools team Intern', 'lloan'),
 								'location' => __('Remote', 'lloan'),
-								'desc'     => __("Internship through the Outreachy program, working on the Mozilla DevTools products. Also built the search functionality within the Firefox network panel under the product's lead, Honza.", 'lloan'),
+								'desc'     => __("Identified and fixed bugs across multiple Firefox browser developer tools products, including console, inspector, and memory monitor. Contributed to various feature implementations, notably the Firefox network panel search functionality.", 'lloan'),
 							],
 							[
 								'start'    => '2019-02-01',
@@ -78,16 +78,16 @@
 								'company'   => 'Esri',
 								'title'   => __('Application Developer', 'lloan'),
 								'location' => 'Redlands, CA',
-								'desc'     => __("Led the development and maintenance of esri.com blogs framework and authoring experience. Developed tools for image optimization, granular user permissions management across multiple sites, and tools to increase authoring efficiency. Implemented optimizations to legacy code and increased overall performance of sites.", 'lloan'),
+								'desc'     => __("Spearheaded development of all WordPress applications for Esri.com publications. Developed tools for authoring, including image optimization and user permissions management. Optimized legacy code to improve site performance and improve authoring experience. Throughout my tenure, due to successful development, tech stack adoption increased by 400%.", 'lloan'),
 							],
 							[
 								'start'    => '2021-07-01',
 								'end'      => null,
-								'date'     => 'Jul 2021 - Present',
+								'date'     => 'Jul 2021 - Feb 2024',
 								'company'   => 'Mozilla',
 								'title'   => __('Software Engineer - Firefox Relay', 'lloan'),
 								'location' => __('Remote', 'lloan'),
-								'desc'     => __("Develop features and maintain S&P products such as Firefox Relay using React, both the web application and the browser extensions. Implemented telemetry strategies utilizing SQL for consumption by Grafana.", 'lloan'),
+								'desc'     => __("Develop and maintain Firefox Relay (Next.js app) features using React. Implemented SQL-based telemetry strategies for Grafana. Enhanced Guardian project, streamlining VPN-FxA integration. Provided React guidance to lower team learning curve, accelerating feature development. Drive front-end enhancements, boosting Relay adoption. Contributed to code refactoring, improving team productivity", 'lloan'),
 							],
 						];
 						$index = count($education) - 1;
