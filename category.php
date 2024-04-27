@@ -9,11 +9,11 @@ if (is_category()) {
 
 if (isset($category_name)) {
 	$args = array(
-		'post_type'      => 'post',          // Ensure we're getting posts (not pages or custom post types)
-		'post_status'    => 'publish',     // Only retrieve published posts
-		'posts_per_page' => - 1,          // Limit to 6 posts
-		'orderby'        => 'date',            // Order by post date
-		'order'          => 'DESC',               // Latest posts first
+		'post_type'      => 'post',
+		'post_status'    => 'publish',
+		'posts_per_page' => - 1,
+		'orderby'        => 'date',
+		'order'          => 'DESC',
 		'category_name'  => $category_name,
 	);
 

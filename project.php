@@ -7,11 +7,11 @@
 get_header();
 
 $args = array(
-	'post_type' => 'project',          // Ensure we're getting posts (not pages or custom post types)
-	'post_status' => 'publish',     // Only retrieve published posts
-	'posts_per_page' => -1,          // Limit to 6 posts
-	'orderby' => 'date',            // Order by post date
-	'order' => 'DESC'               // Latest posts first
+	'post_type' => 'project',
+	'post_status' => 'publish',
+	'posts_per_page' => -1,
+	'orderby' => 'date',
+	'order' => 'DESC'
 );
 
 $query = new WP_Query($args);
@@ -27,9 +27,9 @@ $query = new WP_Query($args);
 				<h1><?php _e('Projects', 'lloan');?></h1>
 			</section>
 			<hr class="news-deco-line" aria-hidden="true">
-			<?php include('template/projects.php'); ?>
 		</div>
 
+		<?php include('template/projects.php'); ?>
 	</div>
 
 <?php get_footer(); ?>
