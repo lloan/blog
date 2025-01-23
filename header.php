@@ -18,8 +18,8 @@
 <nav class="news-header-logo-container hide-mobile">
 	<ul>
 		<li>
-			<a class="menu-item" href="<?php echo get_home_url() . '/articles/'; ?>" aria-label="<?php _e('Articles', 'lloan');?>">
-				<?php _e('Articles', 'lloan');?>
+			<a class="menu-item" href="https://www.linkedin.com/in/lloan" aria-label="<?php _e('LinkedIn', 'lloan');?>">
+				<?php _e('LinkedIn', 'lloan');?>
 			</a>
 		</li>
 		<li>

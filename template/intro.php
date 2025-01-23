@@ -19,10 +19,8 @@
 					<div class="c-intro">
 						<div class="o-content__body">
 							<p>
-								<?php _e("With over a decade of experience in the realm of software engineering, I have honed my specialization in web technologies. My latest position was at Mozilla, as a member of the Security & Privacy products team. My contributions at Mozilla are primarily centered around Firefox Relay, both the website and the web extension—a paramount privacy tool that enables users to create distinct email and phone masks. My passion is in designing swift, responsive, and universally accessible web applications, utilizing cutting-edge technologies and upholding industry best practices.", 'lloan');?> </p>
-							<p>
-								<?php _e("My technical expertise spans React, Typescript, Next.js, Node, and WordPress. I am consistently motivated by the desire to expand my skill set, explore innovative tools, and share my knowledge with the broader professional community. While I had previously embarked on a PhD program in Information Systems and Technology, emphasizing IT Strategy and Innovation, I've chosen to put this academic pursuit on hold to concentrate on other professional endeavors for the time being.", 'lloan');?>
-							</p>
+								<?php _e("Seasoned software engineer with a decade of experience specializing in front-end development and full-stack capabilities. Proven track record of leading projects, driving innovation, and delivering high-impact solutions that enhance user experiences and optimize performance. Adept at working in dynamic environments and collaborating with cross-functional teams to achieve business goals.", 'lloan');?> </p>
+							</p>								
 						</div>
 					</div>
 				</div>

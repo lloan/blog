@@ -2368,11 +2368,11 @@ img[height] {
 .c-work__timeframe,
 .c-work__location {
     opacity: .6;
-    font-size: 0.7rem;
+    font-size: 12px;
 }
 
 .c-work__title {
-    font-size: 0.8rem;
+    font-size: 16px;
 }
 
 .c-work__location {

@@ -6,9 +6,9 @@
 			<header class="o-section__header  t-section__header">
 				<div class="o-content">
 					<h2 id="experience" class="o-section__heading"><?php _e('Experience', 'lloan');?></h2>
-					<a href="https://lloanalas.com/wp-content/uploads/2023/09/resume-alas.pdf">
-						<?php _e('Download Resume', 'lloan'); ?> (PDF)
-					</a>
+					<!-- <a href="https://lloanalas.com/wp-content/uploads/2023/09/resume-alas.pdf">
+						<?php // _e('Download Resume', 'lloan'); ?> (PDF)
+					</a> -->
 				</div>
 			</header>
 			<div class="o-section__content  t-section__content  u-pt-0">
@@ -23,21 +23,13 @@
 								'title'   => __('Web Developer', 'lloan'),
 								'location' => 'Rialto, CA',
 								'desc'     => __("Translated PDF designs into pixel-perfect web applications. Directed hosting, deployment, and version control. Built accessible, high-performance web architectures. Developed proprietary applications under NDAs.", 'lloan'),
-							],
+							], 
 							[
 								'start'    => '2014-01-12',
-								'end'      => '2015-02-05',
-								'company'   => 'Voice Marketing',
-								'title'   => __('Web Developer', 'lloan'),
-								'location' => 'Rancho Cucamonga, CA',
-								'desc'     => __("Specialized in developing responsive websites, with user-friendly interfaces and cross-browser compatibility. Utilized background in interactive design, graphic design, web design and animation.", 'lloan'),
-							],
-							[
-								'start'    => '2015-02-15',
 								'end'      => '2017-07-01',
 								'company'   => 'Voice Marketing',
 								'title'   => __('Lead Web Developer', 'lloan'),
-								'location' => 'Rancho, CA',
+								'location' => 'Rancho Cucamonga, CA',
 								'desc'     => __("Oversaw WordPress application development for marketing campaigns. Managed SEO efforts to boost website visibility and traffic. Led cross-functional team, completing hundreds of projects. Collaborated with designers and marketers to integrate web solutions. Managed over 50 different websites for a plethora of different clients, including a national entity with franchises all over the country (Steri-Clean/Hoarders).", 'lloan'),
 							],
 							[
@@ -63,17 +55,9 @@
 								'title'   => __('Mentor', 'lloan'),
 								'location' => __('Remote', 'lloan'),
 								'desc'     => __("Front-End Web Developer Nanodegree Mentor.", 'lloan'),
-							],
+							], 
 							[
 								'start'    => '2018-02-01',
-								'end'      => '2019-03-01',
-								'company'   => 'Esri',
-								'title'   => __('WordPress Developer', 'lloan'),
-								'location' => 'Redlands, CA',
-								'desc'     => __("Contract", 'lloan'),
-							],
-							[
-								'start'    => '2019-03-01',
 								'end'      => null,
 								'company'   => 'Esri',
 								'title'   => __('Application Developer', 'lloan'),
@@ -82,12 +66,21 @@
 							],
 							[
 								'start'    => '2021-07-01',
-								'end'      => null,
+								'end'      => '2024-02-01',
 								'date'     => 'Jul 2021 - Feb 2024',
 								'company'   => 'Mozilla',
 								'title'   => __('Software Engineer - Firefox Relay', 'lloan'),
 								'location' => __('Remote', 'lloan'),
 								'desc'     => __("Develop and maintain Firefox Relay (Next.js app) features using React. Implemented SQL-based telemetry strategies for Grafana. Enhanced Guardian project, streamlining VPN-FxA integration. Provided React guidance to lower team learning curve, accelerating feature development. Drive front-end enhancements, boosting Relay adoption. Contributed to code refactoring, improving team productivity", 'lloan'),
+							], 
+							[
+								'start'    => '2024-08-01',
+								'end'      => null,
+								'date'     => 'Mar 2024 - Present',
+								'company'   => 'Warner Bros. Discovery',
+								'title'   => __('Frontend Engineer', 'lloan'),
+								'location' => __('Remote', 'lloan'),
+								'desc'     => __("Project SME on WordPress, providing strategic input and technical guidance across multiple facets of the project. Designed and implemented the application's frontend, delivering a seamless and engaging user experience. Contributed to backend development, ensuring robust and scalable solutions.  Spearheaded the rearchitecture of the original project, reducing complexity, accelerating development cycles, and minimizing errors to enhance overall efficiency. Collaborated with cross-functional teams to deliver a streamlined and innovative WordPress application aligned with business goals.", 'lloan'),
 							],
 						];
 						$index = count($education) - 1;

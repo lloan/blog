@@ -12,9 +12,7 @@
 					$website = get_field('website');
 					$repo = get_field('github_repository');
 					$visibility = get_field('visibility');
-					?>
-					<span><?php the_date(); ?></span>
-
+					?> 
 					<?php the_title( '<h1>', '</h1>' ); ?>
 
 					<hr class="news-deco-line t-primary-color-line" aria-hidden="true">
